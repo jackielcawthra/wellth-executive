@@ -116,6 +116,7 @@
 
     .btn-primary {
       display: inline-block;
+      align-self: flex-start;
       background: var(--dark);
       color: #fff;
       font-family: "DM Sans", sans-serif;
@@ -349,6 +350,52 @@
     }
     footer a:hover { opacity: 1; }
 
+    /* ── JACKIE ── */
+    .jackie-section {
+      padding: 6rem 2.5rem;
+      background: var(--sand);
+    }
+
+    .jackie-inner {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: 5rem;
+      align-items: center;
+    }
+
+    .jackie-photo {
+      width: 100%;
+      aspect-ratio: 3 / 4;
+      object-fit: cover;
+      object-position: center top;
+      border-radius: 2px;
+    }
+
+    .jackie-name {
+      font-family: "DM Serif Display", serif;
+      font-size: clamp(1.6rem, 2.8vw, 2.4rem);
+      font-weight: 400;
+      color: var(--dark);
+      line-height: 1.15;
+      margin-bottom: 0.5rem;
+    }
+
+    .jackie-role {
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 1.75rem;
+    }
+
+    .jackie-bio {
+      font-size: 1rem;
+      line-height: 1.78;
+      color: var(--muted);
+      font-weight: 300;
+    }
+
     /* ── RESPONSIVE ── */
     @media (max-width: 720px) {
       nav { padding: 1rem 1.25rem; }
@@ -357,6 +404,8 @@
       .for-you { padding: 4.5rem 1.25rem; }
       .for-you .section-inner { grid-template-columns: 1fr; gap: 2.5rem; }
       .cta-section { padding: 5rem 1.25rem; }
+      .jackie-section { padding: 4.5rem 1.25rem; }
+      .jackie-inner { grid-template-columns: 1fr; gap: 2.5rem; }
       footer { padding: 1.75rem 1.25rem; }
     }
   </style>
@@ -371,7 +420,7 @@
 
   <!-- HERO -->
   <section class="hero">
-    <p class="eyebrow">Precisionshälsa</p>
+    <p class="eyebrow">Precisionshälsa · av Jackie Cawthra</p>
     <p class="collab">i samarbete med Sofia von Celsing</p>
     <h1>Din hälsa är din<br><em>viktigaste tillgång.</em></h1>
     <p>Vi stödjer dig i att förstå din biologi och ger dig en personlig plan för att optimera dina energinivåer, sömn och långsiktiga hälsa.</p>
@@ -426,6 +475,19 @@
   <section class="cta-section">
     <a class="btn-white" href="https://www.nordicwellth.com/test-packages/longevity-package" target="_blank" rel="noopener">Beställ Longevity Package</a>
     <span class="cta-note-wrap"><p class="cta-note">Du skickas vidare till NordicWellth.com för att slutföra din beställning</p></span>
+  </section>
+
+  <!-- JACKIE -->
+  <section class="jackie-section">
+    <div class="section-inner jackie-inner">
+      <img src="jackie.png" alt="Jackie Cawthra" class="jackie-photo" />
+      <div>
+        <p class="section-label">Grundare</p>
+        <h2 class="jackie-name">Jackie Cawthra</h2>
+        <p class="jackie-role">Grundare &amp; CEO, Wellth</p>
+        <p class="jackie-bio">Jackie Cawthra är grundaren av Wellth och en passionerad förespråkare för precisionshälsa. Hon hjälper ambitiösa kvinnor att förstå sin biologi och ta kontrollen över sin hälsa — genom djupgående blodanalyser, personliga hälsoplaner och konkret vägledning anpassad efter varje individs unika förutsättningar och mål.</p>
+      </div>
+    </div>
   </section>
 
   <!-- FOOTER -->
